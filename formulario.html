@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+
+</head>
+<h1 id="title">Subscribite!</h1>
+<p id="description">Formulario para inscribirte al newsletter</p>
+
+<body>
+<form id="Form" for="Form" required>
+ <fieldset > <label id="name-label" for="name">Nombre</label><input  id="name" type="text" placeholder="Ingrese su Nombre" required >
+<label id="lastname-label" for="lastname">Apellido</label><input   id="lastname" type="text" placeholder="Ingrese su Apellido" required >
+ <label id="email-label" for="Email">Email</label> <input id="email" type="email" placeholder="Ingrese su Email" required >
+ <label id="age-label" for="age">Edad</label>
+  <input id="number" type="number" min="8" max="100" placeholder="8-100" required></fieldset>
+  <fieldset>
+ <p>Te gusta la Pagina?</p> 
+<select id="dropdown">
+  <option>Si!</option>
+  <option>No,Para nada!</option>
+  <option>Mas o menos</option>
+</select> </fieldset>
+ <fieldset>
+<p>en una escala del 1 al 5, que calificación le darias a la pagina?</p>
+<label>
+1<input name="escale" value="1" type="radio" checked class="inline" ></label>
+<label>
+2<input name="escale" value="2" type="radio" checked class="inline" ></label>
+<label>
+3<input name="escale" value="3" type="radio" checked class="inline" ></label>
+<label>
+4<input name="escale" value="4" type="radio" checked class="inline" ></label>
+<label>
+5<input name="escale" value="5" type="radio" checked class="inline" ></label>
+ </fieldset>
+ <fieldset>
+<p>Que Agregarias?</p>
+<label><input name="add" value="Foro" type="checkbox">Foro</label>
+<label><input name="add" value="leer" type="checkbox">Contenido para leer</label>
+<label><input name="add" value="videos" type="checkbox">Videos</label>
+<label><input name="add" value="otros" type="checkbox">Otros </label>
+
+ </fieldset>
+  <fieldset>
+<p>Comentarios y Sugerencias</p>
+<textarea id="comentarios"placeholder="Escribi un comentario..."></textarea> </fieldset>
+<button id="submit" type="submit">Submit</button>
+</form>
+
+    
+</body>
+</html>
